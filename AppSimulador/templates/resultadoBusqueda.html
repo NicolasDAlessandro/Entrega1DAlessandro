@@ -1,0 +1,10 @@
+{% extends 'inicio.html' %}
+
+
+{% block contenido %}
+
+    {% for busqueda in busquedas %}
+        {{busqueda}} <br>
+    {% endfor %}
+
+{% endblock contenido %}

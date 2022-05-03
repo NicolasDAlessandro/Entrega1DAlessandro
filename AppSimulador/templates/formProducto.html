@@ -1,0 +1,13 @@
+{% extends 'inicio.html' %}
+
+
+{% block contenido %}
+
+    <h2>Formulario Producto</h2>
+    <form method="POST" action="" style="display:flex;flex-direction: column;justify-self: center;max-width: 400px;margin-inline: auto;">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit" value="Enviar">
+    </form>
+
+{% endblock contenido %}
